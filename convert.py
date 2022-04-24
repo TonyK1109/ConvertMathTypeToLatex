@@ -128,68 +128,73 @@ def get_model_question_list(text, answer_dict):
 
 
 # Main Flow
-zip_f = zipfile.ZipFile('Original.docx')
+def convert_from_word_to_model_question_list(path_file):
+    zip_f = zipfile.ZipFile(path_file)
 
-for f in zip_f.namelist():
-    if f.startswith('word/document'):
-        document = zip_f.read(f)
-    if f == 'word/_rels/document.xml.rels':
-        relations = zip_f.read(f)
+    for f in zip_f.namelist():
+        if f.startswith('word/document'):
+            document = zip_f.read(f)
+        if f == 'word/_rels/document.xml.rels':
+            relations = zip_f.read(f)
 
-# save image
-for f in zip_f.namelist():
-    _, extension = os.path.splitext(f)
-    if extension in extensions:
-        destination = os.path.join("image", os.path.basename(f))
-        with open(destination, 'wb') as destination_file:
-            destination_file.write(zip_f.read(f))
+    # save image
+    for f in zip_f.namelist():
+        _, extension = os.path.splitext(f)
+        if extension in extensions:
+            destination = os.path.join("image", os.path.basename(f))
+            with open(destination, 'wb') as destination_file:
+                destination_file.write(zip_f.read(f))
 
-zip_f.close()
+    zip_f.close()
 
-# load relationships for get image location
-image_dict = get_image_location_dict(relations)
+    # load relationships for get image location
+    image_dict = get_image_location_dict(relations)
 
-text = ''
-root = ElementTree.fromstring(document)
-for child in root.iter():
+    text = ''
+    root = ElementTree.fromstring(document)
+    for child in root.iter():
 
-    if child.tag == qn('w:t'):
-        text += child.text if child.text is not None else ''
+        if child.tag == qn('w:t'):
+            text += child.text if child.text is not None else ''
 
-    # divide MCQ
-    elif child.tag == qn('w:bookmarkStart'):
-        text += '&*'
+        # divide MCQ
+        elif child.tag == qn('w:bookmarkStart'):
+            text += '&*'
 
-    # Found answer table
-    elif child.tag == qn('w:tbl'):
-        text += '&t'
-        text += get_answer_table_string(child)
-        text += '&t'
+        # Found answer table
+        elif child.tag == qn('w:tbl'):
+            text += '&t'
+            text += get_answer_table_string(child)
+            text += '&t'
 
-    # Found an equation
-    elif child.tag == qn('m:oMath'):
-        text += inline_delimiter + ' '
-        text += tag_to_latex(child)
-        text += ' ' + inline_delimiter
+        # Found an equation
+        elif child.tag == qn('m:oMath'):
+            text += inline_delimiter + ' '
+            text += tag_to_latex(child)
+            text += ' ' + inline_delimiter
 
-    # Found an image
-    elif child.tag == qn('w:drawing'):
-        url = get_image_location(image_dict, child)
-        if url is not None:
-            text += f'\nIMAGE_URL:{url}\n'
+        # Found an image
+        elif child.tag == qn('w:drawing'):
+            url = get_image_location(image_dict, child)
+            if url is not None:
+                text += f'\nIMAGE_URL:{url}\n'
 
-    elif child.tag == qn('w:tab'):
-        text += '\t'
-    elif child.tag == qn('w:br') or child.tag == qn('w:cr'):
-        text += '\n'
-    elif child.tag == qn('w:p'):
-        text += '\n\n'
+        elif child.tag == qn('w:tab'):
+            text += '\t'
+        elif child.tag == qn('w:br') or child.tag == qn('w:cr'):
+            text += '\n'
+        elif child.tag == qn('w:p'):
+            text += '\n\n'
 
-text = re.sub(r'\n(\n+)\$(\s*.+\s*)\$\n', r'\n\1$$ \2 $$', text)
+    text = re.sub(r'\n(\n+)\$(\s*.+\s*)\$\n', r'\n\1$$ \2 $$', text)
 
-answer_dict = get_answer_dict(text)
+    answer_dict = get_answer_dict(text)
 
-model_question_list = get_model_question_list(text, answer_dict)
+    model_question_list = get_model_question_list(text, answer_dict)
 
-with open('model_question_list.json', 'w', encoding='utf-8') as f:
-    json.dump(model_question_list, f, ensure_ascii=False,  indent=4)
+    with open('model_question_list.json', 'w', encoding='utf-8') as f:
+        json.dump(model_question_list, f, ensure_ascii=False,  indent=4)
+
+
+if __name__ == '__main__':
+    convert_from_word_to_model_question_list('Original.docx')
