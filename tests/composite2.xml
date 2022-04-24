@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testMath>
+    <ns0:oMath xmlns:ns0="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:ns1="http://schemas.openxmlformats.org/wordprocessingml/2006/main">
+        <ns0:sSup>
+            <ns0:sSupPr>
+                <ns0:ctrlPr>
+                    <ns1:rPr>
+                        <ns1:rFonts ns1:ascii="Cambria Math" ns1:hAnsi="Cambria Math" />
+                        <ns1:i />
+                        <ns1:sz ns1:val="24" />
+                        <ns1:szCs ns1:val="24" />
+                    </ns1:rPr>
+                </ns0:ctrlPr>
+            </ns0:sSupPr>
+            <ns0:e>
+                <ns0:r>
+                    <ns1:rPr>
+                        <ns1:rFonts ns1:ascii="Cambria Math" />
+                        <ns1:sz ns1:val="24" />
+                        <ns1:szCs ns1:val="24" />
+                    </ns1:rPr>
+                    <ns0:t>e</ns0:t>
+                </ns0:r>
+            </ns0:e>
+            <ns0:sup>
+                <ns0:r>
+                    <ns1:rPr>
+                        <ns1:rFonts ns1:ascii="Cambria Math" />
+                        <ns1:sz ns1:val="24" />
+                        <ns1:szCs ns1:val="24" />
+                    </ns1:rPr>
+                    <ns0:t>3x+5y</ns0:t>
+                </ns0:r>
+            </ns0:sup>
+        </ns0:sSup>
+        <ns0:r>
+            <ns1:rPr>
+                <ns1:rFonts ns1:ascii="Cambria Math" />
+                <ns1:sz ns1:val="24" />
+                <ns1:szCs ns1:val="24" />
+            </ns1:rPr>
+            <ns0:t>-</ns0:t>
+        </ns0:r>
+        <ns0:sSup>
+            <ns0:sSupPr>
+                <ns0:ctrlPr>
+                    <ns1:rPr>
+                        <ns1:rFonts ns1:ascii="Cambria Math" ns1:hAnsi="Cambria Math" />
+                        <ns1:i />
+                        <ns1:sz ns1:val="24" />
+                        <ns1:szCs ns1:val="24" />
+                    </ns1:rPr>
+                </ns0:ctrlPr>
+            </ns0:sSupPr>
+            <ns0:e>
+                <ns0:r>
+                    <ns1:rPr>
+                        <ns1:rFonts ns1:ascii="Cambria Math" />
+                        <ns1:sz ns1:val="24" />
+                        <ns1:szCs ns1:val="24" />
+                    </ns1:rPr>
+                    <ns0:t>e</ns0:t>
+                </ns0:r>
+            </ns0:e>
+            <ns0:sup>
+                <ns0:r>
+                    <ns1:rPr>
+                        <ns1:rFonts ns1:ascii="Cambria Math" />
+                        <ns1:sz ns1:val="24" />
+                        <ns1:szCs ns1:val="24" />
+                    </ns1:rPr>
+                    <ns0:t>x+3y+1</ns0:t>
+                </ns0:r>
+            </ns0:sup>
+        </ns0:sSup>
+        <ns0:r>
+            <ns1:rPr>
+                <ns1:rFonts ns1:ascii="Cambria Math" />
+                <ns1:sz ns1:val="24" />
+                <ns1:szCs ns1:val="24" />
+            </ns1:rPr>
+            <ns0:t>=1</ns0:t>
+        </ns0:r>
+        <ns0:r>
+            <ns1:rPr>
+                <ns1:rFonts ns1:ascii="Cambria Math" />
+                <ns1:sz ns1:val="24" />
+                <ns1:szCs ns1:val="24" />
+            </ns1:rPr>
+            <ns0:t>-</ns0:t>
+        </ns0:r>
+        <ns0:r>
+            <ns1:rPr>
+                <ns1:rFonts ns1:ascii="Cambria Math" />
+                <ns1:sz ns1:val="24" />
+                <ns1:szCs ns1:val="24" />
+            </ns1:rPr>
+            <ns0:t>2x</ns0:t>
+        </ns0:r>
+        <ns0:r>
+            <ns1:rPr>
+                <ns1:rFonts ns1:ascii="Cambria Math" />
+                <ns1:sz ns1:val="24" />
+                <ns1:szCs ns1:val="24" />
+            </ns1:rPr>
+            <ns0:t>-</ns0:t>
+        </ns0:r>
+        <ns0:r>
+            <ns1:rPr>
+                <ns1:rFonts ns1:ascii="Cambria Math" />
+                <ns1:sz ns1:val="24" />
+                <ns1:szCs ns1:val="24" />
+            </ns1:rPr>
+            <ns0:t>2y</ns0:t>
+        </ns0:r>
+        <ns0:r>
+            <ns1:rPr>
+                <ns1:rFonts ns1:ascii="Cambria Math" ns1:hAnsi="Cambria Math" ns1:cs="Cambria Math" />
+                <ns1:sz ns1:val="24" />
+                <ns1:szCs ns1:val="24" />
+            </ns1:rPr>
+            <ns0:t>⇔</ns0:t>
+        </ns0:r>
+        <ns0:sSup>
+            <ns0:sSupPr>
+                <ns0:ctrlPr>
+                    <ns1:rPr>
+                        <ns1:rFonts ns1:ascii="Cambria Math" ns1:hAnsi="Cambria Math" />
+                        <ns1:i />
+                        <ns1:sz ns1:val="24" />
+                        <ns1:szCs ns1:val="24" />
+                    </ns1:rPr>
+                </ns0:ctrlPr>
+            </ns0:sSupPr>
+            <ns0:e>
+                <ns0:r>
+                    <ns1:rPr>
+                        <ns1:rFonts ns1:ascii="Cambria Math" />
+                        <ns1:sz ns1:val="24" />
+                        <ns1:szCs ns1:val="24" />
+                    </ns1:rPr>
+                    <ns0:t>e</ns0:t>
+                </ns0:r>
+            </ns0:e>
+            <ns0:sup>
+                <ns0:r>
+                    <ns1:rPr>
+                        <ns1:rFonts ns1:ascii="Cambria Math" />
+                        <ns1:sz ns1:val="24" />
+                        <ns1:szCs ns1:val="24" />
+                    </ns1:rPr>
+                    <ns0:t>3x+5y</ns0:t>
+                </ns0:r>
+            </ns0:sup>
+        </ns0:sSup>
+        <ns0:r>
+            <ns1:rPr>
+                <ns1:rFonts ns1:ascii="Cambria Math" />
+                <ns1:sz ns1:val="24" />
+                <ns1:szCs ns1:val="24" />
+            </ns1:rPr>
+            <ns0:t>+</ns0:t>
+        </ns0:r>
+        <ns0:d>
+            <ns0:dPr>
+                <ns0:ctrlPr>
+                    <ns1:rPr>
+                        <ns1:rFonts ns1:ascii="Cambria Math" ns1:hAnsi="Cambria Math" />
+                        <ns1:i />
+                        <ns1:sz ns1:val="24" />
+                        <ns1:szCs ns1:val="24" />
+                    </ns1:rPr>
+                </ns0:ctrlPr>
+            </ns0:dPr>
+            <ns0:e>
+                <ns0:r>
+                    <ns1:rPr>
+                        <ns1:rFonts ns1:ascii="Cambria Math" />
+                        <ns1:sz ns1:val="24" />
+                        <ns1:szCs ns1:val="24" />
+                    </ns1:rPr>
+                    <ns0:t>3x+5y</ns0:t>
+                </ns0:r>
+            </ns0:e>
+        </ns0:d>
+        <ns0:r>
+            <ns1:rPr>
+                <ns1:rFonts ns1:ascii="Cambria Math" />
+                <ns1:sz ns1:val="24" />
+                <ns1:szCs ns1:val="24" />
+            </ns1:rPr>
+            <ns0:t>=</ns0:t>
+        </ns0:r>
+        <ns0:sSup>
+            <ns0:sSupPr>
+                <ns0:ctrlPr>
+                    <ns1:rPr>
+                        <ns1:rFonts ns1:ascii="Cambria Math" ns1:hAnsi="Cambria Math" />
+                        <ns1:i />
+                        <ns1:sz ns1:val="24" />
+                        <ns1:szCs ns1:val="24" />
+                    </ns1:rPr>
+                </ns0:ctrlPr>
+            </ns0:sSupPr>
+            <ns0:e>
+                <ns0:r>
+                    <ns1:rPr>
+                        <ns1:rFonts ns1:ascii="Cambria Math" />
+                        <ns1:sz ns1:val="24" />
+                        <ns1:szCs ns1:val="24" />
+                    </ns1:rPr>
+                    <ns0:t>e</ns0:t>
+                </ns0:r>
+            </ns0:e>
+            <ns0:sup>
+                <ns0:r>
+                    <ns1:rPr>
+                        <ns1:rFonts ns1:ascii="Cambria Math" />
+                        <ns1:sz ns1:val="24" />
+                        <ns1:szCs ns1:val="24" />
+                    </ns1:rPr>
+                    <ns0:t>x+3y+1</ns0:t>
+                </ns0:r>
+            </ns0:sup>
+        </ns0:sSup>
+        <ns0:r>
+            <ns1:rPr>
+                <ns1:rFonts ns1:ascii="Cambria Math" />
+                <ns1:sz ns1:val="24" />
+                <ns1:szCs ns1:val="24" />
+            </ns1:rPr>
+            <ns0:t>+</ns0:t>
+        </ns0:r>
+        <ns0:d>
+            <ns0:dPr>
+                <ns0:ctrlPr>
+                    <ns1:rPr>
+                        <ns1:rFonts ns1:ascii="Cambria Math" ns1:hAnsi="Cambria Math" />
+                        <ns1:i />
+                        <ns1:sz ns1:val="24" />
+                        <ns1:szCs ns1:val="24" />
+                    </ns1:rPr>
+                </ns0:ctrlPr>
+            </ns0:dPr>
+            <ns0:e>
+                <ns0:r>
+                    <ns1:rPr>
+                        <ns1:rFonts ns1:ascii="Cambria Math" />
+                        <ns1:sz ns1:val="24" />
+                        <ns1:szCs ns1:val="24" />
+                    </ns1:rPr>
+                    <ns0:t>x+3y+1</ns0:t>
+                </ns0:r>
+            </ns0:e>
+        </ns0:d>
+        <ns0:r>
+            <ns0:rPr>
+                <ns0:sty ns0:val="p" />
+            </ns0:rPr>
+            <ns1:rPr>
+                <ns1:rFonts ns1:ascii="Cambria Math" />
+                <ns1:sz ns1:val="24" />
+                <ns1:szCs ns1:val="24" />
+            </ns1:rPr>
+            <ns1:br />
+        </ns0:r>
+    </ns0:oMath>
+</testMath>
